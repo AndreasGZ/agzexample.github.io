@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Videos einbinden</title>
+		<link rel="stylesheet" type="text/css" href="src/css/video.css">
+	</head>
+
+	<body>
+    <!-- video src="src/video/Trailer.mp4" controls loop muted autoplay-->
+    <video controls loop muted>
+      <source src="src/video/Trailer.mp4" type="video/mp4">
+      <p>
+        Das Video kann leider nicht wiedergegeben werden.
+        Du findest das Video jedoch auch unter: <a href="https://youtu.be/Ut2goGezYM4">hier</a>.
+      </p>
+    </video>
+    <!-- <audio src="src/video/akustik.mp3" controls> loop autoplay muted
+        source-elemente-->
+    <audio src="src/video/akustik.mp3" controls autoplay>
+      <p>
+        Die AUdio-Datei kann leider nicht wiedergegeben werden.
+        Du findest sie jedoch auch unter: <a href="https://youtu.be/Ut2goGezYM4">hier</a>.
+      </p>
+    </audio>
+    <picture>
+      <!-- srcset="logo-blau.png logo-blau2x.png 2x logo-blau4x.png 4x" -->
+      <source srcset="src/video/logo-rot.png" media="(max-width: 768px)" type="image/png">
+      <source srcset="src/video/logo-gelb.png" media="(max-width: 1024px)" type="image/png">
+      <source srcset="src/video/logo-blau.png" media="(max-width: 1350px)" type="image/png">
+      <img src="src/video/logo-rot.png" alt="Logo">
+    </picture>
+
+
+    <div id="play"></div>
+    <div id="pause"></div>
+	</body>
+
+</html>

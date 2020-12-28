@@ -1,0 +1,22 @@
+video{
+  width:40%;
+  height: auto;
+}
+div{
+  height: 200px;
+  width: 200px;
+  border: solid grey;
+  margin-bottom: 2rem;
+}
+#play{
+  background: url("../video/sprite.png") 0 0;
+}
+#play:hover{
+  background: url("../video/sprite.png") -200px 0;
+}
+#pause{
+  background: url("../video/sprite.png") 0 -200px;
+}
+#pause:hover{
+  background: url("../video/sprite.png") -200px -200px;
+}

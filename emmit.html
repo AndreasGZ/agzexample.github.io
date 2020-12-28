@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="de">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="./src/css/flex.css">
+	</head>
+
+	<body>
+<!--div -> shift+Enter -->
+<div></div>
+<!--div*3 shift+enter -->
+<div></div>
+<div></div>
+<div></div>
+<!--div.test -->
+<div class="test"></div>
+<!--div#hi -->
+<div id="hi"></div>
+<!--div>h1 -->
+<div>
+  <h1></h1>
+</div>
+<!--div*2>h1 -->
+<div>
+  <h1></h1>
+</div>
+<div>
+  <h1></h1>
+</div>
+<!--div>h1*2 -->
+<div>
+  <h1></h1>
+  <h1></h1>
+</div>
+<!--div+p -->
+<div></div>
+<p></p>
+<!--div+p+a -->
+<div></div>
+<p></p>
+<a href=""></a>
+<!--div>h1+p -->
+<div>
+  <h1></h1>
+  <p></p>
+</div>
+<!--div>h1^p -->
+<div>
+  <h1></h1>
+</div>
+<p></p>
+<!--div{emmet ist super} -->
+<div>emmet ist super</div>
+<!--div{emmet ist}>b{super} -->
+<div>emmet ist<b>super</b></div>
+<!--h1[role=Überschrift] -->
+<h1 role="Überschrift"></h1>
+<!--h1[role=Überschrift data-value="5"] -->
+<h1 role="Überschrift" data-value="5"></h1>
+<!--div.test$*5 -->
+<div class="test1"></div>
+<div class="test2"></div>
+<div class="test3"></div>
+<div class="test4"></div>
+<div class="test5"></div>
+<!--div.test$$$*23 -->
+<div class="test001"></div>
+<div class="test002"></div>
+<div class="test003"></div>
+<div class="test004"></div>
+<div class="test005"></div>
+<div class="test006"></div>
+<div class="test007"></div>
+<div class="test008"></div>
+<div class="test009"></div>
+<div class="test010"></div>
+<div class="test011"></div>
+<div class="test012"></div>
+<div class="test013"></div>
+<div class="test014"></div>
+<div class="test015"></div>
+<div class="test016"></div>
+<div class="test017"></div>
+<div class="test018"></div>
+<div class="test019"></div>
+<div class="test020"></div>
+<div class="test021"></div>
+<div class="test022"></div>
+<div class="test023"></div>
+<!--div.test$@3*5 -->
+<div class="test3"></div>
+<div class="test4"></div>
+<div class="test5"></div>
+<div class="test6"></div>
+<div class="test7"></div>
+<!--div.test$@-*5 -->
+<div class="test5"></div>
+<div class="test4"></div>
+<div class="test3"></div>
+<div class="test2"></div>
+<div class="test1"></div>
+<!--div.test$@-3*5 -->
+<div class="test7"></div>
+<div class="test6"></div>
+<div class="test5"></div>
+<div class="test4"></div>
+<div class="test3"></div>
+<!--div>(p>span)+div -->
+<div>
+  <p><span></span></p>
+  <div></div>
+</div>
+<!--div>p>span+div -->
+<div>
+  <p>
+    <span></span>
+    <div></div>
+  </p>
+</div>
+<!--div>p>span^div -->
+<div>
+  <p><span></span></p>
+  <div></div>
+</div>
+<!-- -->
+<!-- -->
+<!--<form action="wohin" method="get/post (post!!)" enctype="multipart/form-data"> <input type="file" name="datei"> </form>-->
+<!-- <form id="x" ...> <input... form="x">
+<p>...</p>
+<input... form="x"> -> Zugehörigkeit zu dem Formular x
+</form>-->
+<!-- Patterns
+<input type="email" ... pattern=".*Ruben.*" title="Gib was mit Ruben ein!"> -> irgendwas mit Ruben .*=Regular Expression
+title -> Tooltip-->
+<!-- strukturelle Pseudoklassen
+:root -> wurzelelement (html-element) ~ html (root ist spezifischer)
+:empty -> leere Elemente
+:first-child -> erstes Kindelement
+:last-child -> letztes Kindelement
+:nth-child(n) -> ntes Kindelement
+:nth-child(even) -> alle gerade Kindelement
+:nth-child(odd) -> ungerade
+:nth-child(an+b) -> Funktion für nte-Element bsp: 7n+2 0->2; 1->9; 2->16...
+:nth-last-child(n/odd/even/an+b) -> Von hinten gezählt
+:only-child -> einzelkinder
+:first-of-type/ :last-of-type/ :nth-of-type(n/even/odd/an+b)/ nth-last-of-type(n/odd/even/an+b)/ :only-of-type
+bsp: body div:only-of-type das einzige div im Body, wenn es ein einziges div gibt
+
+:focus -> fokussiertes Element
+ -->
+ <!-- <style>
+elem{outline:10px solid blue;} -> Es ist ein Rahmen, nicht im Boxmodel, somit ändert sie die Dimensionen nicht
+mit outlines kann man andere Elemente stören (verdecken)
+elem{box-shadow: erster shadow, zweiter shadow;} -> Schatten um ein Box
+</style> -->
+
+<div class="flex-container">
+	 <p><b>1</b>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+		 sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+		erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+		rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+		dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+		sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+		erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+		ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+		ipsum dolor sit amet.</p>
+	<p><b>2</b>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+		 sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+		erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+		rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+		dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+		sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+		erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+		ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+		ipsum dolor sit amet.</p>
+	<p><b>3</b>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+		 sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+		erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+		rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+		dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+		sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+		erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+		ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+		ipsum dolor sit amet.</p>
+	<!-- <p><b>4</b>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+		 sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+		erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+		rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+		dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+		sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+		erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+		ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+		ipsum dolor sit amet.</p>
+	<p><b>5</b>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+		 sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+		erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+		rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+		dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+		sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+		erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+		ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+		ipsum dolor sit amet.</p>
+	<p><b>6</b>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+		 sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+		erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+		rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+		dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+		sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+		erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+		ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+		ipsum dolor sit amet.</p> -->
+		<!-- <p><b>1</b>Lorem ipsum</p>
+		<p><b>2</b>Lorem ipsum</p>
+		<p><b>3</b>Lorem ipsum</p>
+		<p><b>4</b>Lorem ipsum</p>
+		<p><b>5</b>Lorem ipsum</p>
+		<p><b>6</b>Lorem ipsum</p> -->
+</div>
+
+	</body>
+
+</html>

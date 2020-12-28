@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Kontakt</title>
+		<link rel="stylesheet" type="text/css" href="src/css/style.css">
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="./src/img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./src/img/favicon/favicon-16x16.png">
+<link rel="manifest" href="./src/img/favicon/site.webmanifest">
+<link rel="mask-icon" href="./src/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="./src/img/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#f0f0f0">
+<meta name="msapplication-config" content="./src/img/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+
+	</head>
+
+	<body>
+
+		<!-- Navigationsleiste -->
+		<nav class="header-nav">
+			<div class="container">
+				<div class="row">
+					<div class="col-6">
+						<a href="index.html">
+							<img src="src/img/webdesign-logo.png" alt="Das Logo von Webdesign Made Simple">
+						</a>
+						<div class="mobile-nav-button"><a href="#mobile-nav-content-id">&equiv;</a></div>
+						<div class="mobile-nav-content" id="mobile-nav-content-id">
+							<ul id="nav-list">
+								<li><a href="index.html">Startseite</a></li>
+								<li><a href="leistungen.html">Leistungen</a></li>
+								<li class="active"><a href="kontakt.html">Kontakt</a></li>
+								<li><a href="impressum.html">Impressum</a></li>
+								<li class="close-nav"><a href="#nav-list">&times;</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Header Banner -->
+		<header class="header-banner-klein"></header>
+
+		<!-- Kontakt Bereich -->
+		<section id="kontakt-bereich">
+			<div class="container">
+				<div class="row">
+					<div class="col-6">
+						<header class="intro-container">
+							<h1>Kontakt</h1>
+							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+								 sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+								erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+								rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+								dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+								sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+								erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+								ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+								ipsum dolor sit amet.</p>
+						</header>
+					</div>
+				</div>
+				<form action="kontakt.html" method="post" id="kontakt-formular">
+				<div class="row">
+					<div class="col-3">
+						<label for="vorname" class="screenreader">Vorname:</label>
+						<input type="text" id="vorname" name="vorname" placeholder="Vorname">
+					</div>
+					<div class="col-3">
+						<label for="nachname" class="screenreader">Nachname:</label>
+						<input type="text" id="nachname" name="nachname" placeholder="Nachname">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<label for="email" class="screenreader">E-Mail:</label>
+						<input type="email" id="email" name="email" placeholder="E-Mail">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<label for="nachricht" class="screenreader">Nachricht:</label>
+						<textarea id="nachricht" name="nachricht" placeholder="Nachricht"></textarea>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<button class="btn-type-3" type="submit" name="absenden">Absenden</button>
+					</div>
+				</div>
+			</form>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer id="fuss">
+			<div class="container">
+				<div class="row">
+					<div class="col-6">
+						<span>WEBDESIGN made simple by Andreas Guzu (2020)</span>
+						<nav id="fuss-nav">
+							<a href="impressum.html">Impressum</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+
+</html>
