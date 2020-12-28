@@ -23,8 +23,8 @@ header, main, section, article, footer{
   display: block;
 }
 :focus{
-   outline: 2px dotted #F0F0F0; 
-  /*box-shadow: 0 0 3px 2px #F0F0F0, 0 0 10px #F0F0F0;*/
+   /*outline: 2px dotted #F0F0F0; */
+  box-shadow: 0 0 1px 2px #F0F0F0, 0 0 5px #F0F0F0;
 }
 *{
   margin: 0;
